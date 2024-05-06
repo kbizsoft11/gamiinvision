@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+ <app key="profilebackgrounds" version="10012">
+  <word key="__app_profilebackgrounds" js="0">Profile Backgrounds</word>
+  <word key="menu__profilebackgrounds_settings" js="0">Profile Backgrounds</word>
+  <word key="menu__profilebackgrounds_settings_settings" js="0">Settings</word>
+  <word key="profilebackground_Groups" js="0">Who can use?</word>
+  <word key="acplogs__profilebackgrounds_settings" js="0">Updated Profile Backgrounds settings</word>
+  <word key="profilebackgrounds_title" js="0">Profile Backgrounds</word>
+  <word key="ProfileBackgroundImage_Upload" js="0">Background Image</word>
+  <word key="profilebackground_rebuilding_members_data" js="0">Rebuilding members data</word>
+ </app>
+</language>

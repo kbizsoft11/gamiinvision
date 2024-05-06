@@ -1,0 +1,18 @@
+{
+    "tpp": {
+        "logs": {
+            "tab": "community",
+            "controller": "logs",
+            "do": "",
+            "restriction": "logs_manage",
+            "subcontrollers": ""
+        },
+        "settings": {
+            "tab": "community",
+            "controller": "settings",
+            "do": "",
+            "restriction": "settings_manage",
+            "subcontrollers": ""
+        }
+    }
+}

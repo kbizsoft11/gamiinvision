@@ -1,0 +1,29 @@
+{
+    "html": {
+        "added": [
+            "admin\/logs\/tpp_passwordGeneral",
+            "admin\/logs\/tpp_passwordRows",
+            "admin\/logs\/tpp_passwordTable",
+            "front\/topic\/tpp_noAccess",
+            "front\/topic\/tpp_password",
+            "front\/topic\/tpp_passwordBadgeForum",
+            "front\/topic\/tpp_passwordBadgeTopic",
+            "front\/topic\/tpp_passwordGeneral",
+            "front\/topic\/tpp_passwordMenu",
+            "front\/topic\/tpp_passwordRows",
+            "front\/topic\/tpp_passwordTable"
+        ],
+        "edited": [],
+        "removed": []
+    },
+    "css": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    },
+    "resources": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

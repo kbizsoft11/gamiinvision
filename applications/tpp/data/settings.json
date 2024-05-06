@@ -1,0 +1,38 @@
+[
+    {
+        "key": "tpp_app_cookie_days",
+        "default": "3"
+    },
+    {
+        "key": "tpp_app_forcelogin",
+        "default": "1"
+    },
+    {
+        "key": "tpp_app_forums",
+        "default": ""
+    },
+    {
+        "key": "tpp_app_groups",
+        "default": ""
+    },
+    {
+        "key": "tpp_app_groups_exempt",
+        "default": ""
+    },
+    {
+        "key": "tpp_app_log",
+        "default": "1"
+    },
+    {
+        "key": "tpp_app_log_days_remove",
+        "default": "30"
+    },
+    {
+        "key": "tpp_app_max_password",
+        "default": "32"
+    },
+    {
+        "key": "tpp_app_min_password",
+        "default": "3"
+    }
+]

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+ <module key="admin/settings"><![CDATA[{"default_controller":"","protected":false,"default":null}]]></module>
+ <setting key="profilebackground_Groups"><![CDATA[{"key":"profilebackground_Groups","default":""}]]></setting>
+ <hook key="memberModel"><![CDATA[{"type":"C","class":"\\IPS\\Member"}]]></hook>
+ <hook key="profileTemplate"><![CDATA[{"type":"S","class":"\\IPS\\Theme\\class_core_front_profile"}]]></hook>
+ <hook key="profileController"><![CDATA[{"type":"C","class":"\\IPS\\core\\modules\\front\\members\\profile"}]]></hook>
+</build>

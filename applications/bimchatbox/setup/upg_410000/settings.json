@@ -1,0 +1,31 @@
+{
+    "added": [
+        "chatbox_conf_announcements",
+        "chatbox_conf_anntab",
+        "chatbox_conf_autoClear",
+        "chatbox_conf_blocklist",
+        "chatbox_conf_canDelete",
+        "chatbox_conf_canEdit",
+        "chatbox_conf_canView",
+        "chatbox_conf_canchat",
+        "chatbox_conf_chatlimit",
+        "chatbox_conf_editOwn",
+        "chatbox_conf_floodlimit",
+        "chatbox_conf_giphy",
+        "chatbox_conf_guggy",
+        "chatbox_conf_height",
+        "chatbox_conf_hidePhoto",
+        "chatbox_conf_hide_enter_mobile",
+        "chatbox_conf_imgPost",
+        "chatbox_conf_interval",
+        "chatbox_conf_maxemoticons",
+        "chatbox_conf_maxlength",
+        "chatbox_conf_moderators",
+        "chatbox_conf_on",
+        "chatbox_conf_ordertop",
+        "chatbox_conf_timeformat",
+        "chatbox_conf_videoPost"
+    ],
+    "edited": [],
+    "removed": []
+}

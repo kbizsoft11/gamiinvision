@@ -1,0 +1,13 @@
+{
+    "core": {
+        "FileStorage": {
+            "profileBackground": "IPS\\profilebackgrounds\\extensions\\core\\FileStorage\\profileBackground"
+        },
+        "MemberSync": {
+            "profileBackground": "IPS\\profilebackgrounds\\extensions\\core\\MemberSync\\profileBackground"
+        },
+        "Uninstall": {
+            "profileBackground": "IPS\\profilebackgrounds\\extensions\\core\\Uninstall\\profileBackground"
+        }
+    }
+}

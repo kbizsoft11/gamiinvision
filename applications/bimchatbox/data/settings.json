@@ -1,0 +1,102 @@
+[
+    {
+        "key": "chatbox_conf_announcements",
+        "default": ""
+    },
+    {
+        "key": "chatbox_conf_anntab",
+        "default": "0"
+    },
+    {
+        "key": "chatbox_conf_autoClear",
+        "default": "1"
+    },
+    {
+        "key": "chatbox_conf_blocklist",
+        "default": ""
+    },
+    {
+        "key": "chatbox_conf_canDelete",
+        "default": ""
+    },
+    {
+        "key": "chatbox_conf_canEdit",
+        "default": ""
+    },
+    {
+        "key": "chatbox_conf_canView",
+        "default": ""
+    },
+    {
+        "key": "chatbox_conf_canchat",
+        "default": ""
+    },
+    {
+        "key": "chatbox_conf_chatlimit",
+        "default": "100"
+    },
+    {
+        "key": "chatbox_conf_editOwn",
+        "default": ""
+    },
+    {
+        "key": "chatbox_conf_floodlimit",
+        "default": "10"
+    },
+    {
+        "key": "chatbox_conf_giphy",
+        "default": "0"
+    },
+    {
+        "key": "chatbox_conf_guggy",
+        "default": "no"
+    },
+    {
+        "key": "chatbox_conf_height",
+        "default": "360"
+    },
+    {
+        "key": "chatbox_conf_hidePhoto",
+        "default": "0"
+    },
+    {
+        "key": "chatbox_conf_hide_enter_mobile",
+        "default": "0"
+    },
+    {
+        "key": "chatbox_conf_imgPost",
+        "default": "1"
+    },
+    {
+        "key": "chatbox_conf_interval",
+        "default": "10000"
+    },
+    {
+        "key": "chatbox_conf_maxemoticons",
+        "default": "5"
+    },
+    {
+        "key": "chatbox_conf_maxlength",
+        "default": "500"
+    },
+    {
+        "key": "chatbox_conf_moderators",
+        "default": ""
+    },
+    {
+        "key": "chatbox_conf_on",
+        "default": "1"
+    },
+    {
+        "key": "chatbox_conf_ordertop",
+        "default": "0"
+    },
+    {
+        "key": "chatbox_conf_timeformat",
+        "default": "12"
+    },
+    {
+        "key": "chatbox_conf_videoPost",
+        "default": "0"
+    }
+]

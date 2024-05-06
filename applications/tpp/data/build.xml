@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+ <module key="admin/tpp"><![CDATA[{"default_controller":"","protected":false,"default":null}]]></module>
+ <setting key="tpp_app_cookie_days"><![CDATA[{"key":"tpp_app_cookie_days","default":"3"}]]></setting>
+ <setting key="tpp_app_forcelogin"><![CDATA[{"key":"tpp_app_forcelogin","default":"1"}]]></setting>
+ <setting key="tpp_app_forums"><![CDATA[{"key":"tpp_app_forums","default":""}]]></setting>
+ <setting key="tpp_app_groups"><![CDATA[{"key":"tpp_app_groups","default":""}]]></setting>
+ <setting key="tpp_app_groups_exempt"><![CDATA[{"key":"tpp_app_groups_exempt","default":""}]]></setting>
+ <setting key="tpp_app_log"><![CDATA[{"key":"tpp_app_log","default":"1"}]]></setting>
+ <setting key="tpp_app_log_days_remove"><![CDATA[{"key":"tpp_app_log_days_remove","default":"30"}]]></setting>
+ <setting key="tpp_app_max_password"><![CDATA[{"key":"tpp_app_max_password","default":"32"}]]></setting>
+ <setting key="tpp_app_min_password"><![CDATA[{"key":"tpp_app_min_password","default":"3"}]]></setting>
+ <hook key="topicTemplate"><![CDATA[{"type":"S","class":"\\IPS\\Theme\\class_forums_front_topics"}]]></hook>
+ <hook key="topicController"><![CDATA[{"type":"C","class":"\\IPS\\forums\\modules\\front\\forums\\topic"}]]></hook>
+ <hook key="topicModel"><![CDATA[{"type":"C","class":"\\IPS\\forums\\Topic"}]]></hook>
+ <hook key="postModel"><![CDATA[{"type":"C","class":"\\IPS\\forums\\Topic\\Post"}]]></hook>
+ <hook key="topicRowTemplate"><![CDATA[{"type":"S","class":"\\IPS\\Theme\\class_forums_front_forums"}]]></hook>
+</build>

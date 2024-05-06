@@ -1,0 +1,21 @@
+{
+    "normal": {
+        "added": {
+            "0": "__app_profilebackgrounds",
+            "1": "menu__profilebackgrounds_settings",
+            "2": "menu__profilebackgrounds_settings_settings",
+            "4": "profilebackgrounds_title",
+            "5": "ProfileBackgroundImage_Upload",
+            "6": "profilebackground_Groups",
+            "7": "acplogs__profilebackgrounds_settings",
+            "8": "profilebackground_rebuilding_members_data"
+        },
+        "edited": [],
+        "removed": []
+    },
+    "js": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

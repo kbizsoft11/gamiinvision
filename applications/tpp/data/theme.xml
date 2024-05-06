@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="Default" author_name="Invision Power Services, Inc" author_url="https://www.invisioncommunity.com">
+ <template template_group="logs" template_name="tpp_passwordGeneral" template_data="$table" template_location="admin" template_app="tpp">{$table|raw}</template>
+ <template template_group="logs" template_name="tpp_passwordRows" template_data="$table, $headers, $rows" template_location="admin" template_app="tpp"><![CDATA[{{if \count( $rows )}}
+	{{foreach $rows as $row}}
+		{{$user = \IPS\Member::load( $row['member_id'] );}}
+		<tr class='ipsClearfix'>
+			<td style='width: 5%;' class='cNexusSupportTable_icon'>
+				{template="userPhoto" app="core" group="global" params="$user, 'tiny'"}
+			</td>
+			<td style='width: 15%;' class='ipsPos_top'>
+				<div class='ipsType_medium'>
+					{$user->name}
+					<p class='ipsType_reset ipsType_small'>{expression="\IPS\Member\Group::load( $row['member_group_id'] )->formattedName" raw="true"}</p>
+				</div>
+			</td>
+			<td style='width: 40%;'>
+				{{try { $topic = \IPS\forums\Topic::load( $row['topic_id'] ); $text = $topic->title; $url = $topic->url(); $forum = $topic->container(); } catch( \OutOfRangeException $e ) { $text = \IPS\Member::loggedIn()->language()->addToStack( 'content_deleted' ); } }}
+				<a target="_blank" href="{$url}">{$text}</a><br>{lang="in"} <a target="_blank" href="{$forum->url()}">{$forum->_title}</a>
+			</td>
+			<td class='ipsType_center' style='width: 20%;'>
+				{datetime="$row['date']" norelative="true"}
+			</td>
+			<td style='width: 20%;'>
+				{$row['action']}
+			</td>
+		</tr>
+	{{endforeach}}
+{{endif}}]]></template>
+ <template template_group="logs" template_name="tpp_passwordTable" template_data="$table, $headers, $rows, $quickSearch" template_location="admin" template_app="tpp"><![CDATA[<div data-baseurl='{$table->baseUrl}' data-resort='{$table->resortKey}' data-controller='core.global.core.table' {{if $table->getPaginationKey() != 'page'}}data-pageParam='{$table->getPaginationKey()}'{{endif}}>
+
+	{{if $table->pages > 1}}
+		<div class="ipsButtonBar ipsPad_half ipsClearfix ipsClear">
+			<div data-role="tablePagination">
+				{template="pagination" group="global" app="core" location="global" params="$table->baseUrl, $table->pages, $table->page, $table->limit, TRUE, $table->getPaginationKey()"}
+			</div>
+		</div>
+	{{endif}}
+
+	{{if \count( $rows )}}
+		<div class="ipsPad">
+			<table class='ipsTable ipsTable_responsive ipsTable_zebra {{foreach $table->classes as $class}}{$class} {{endforeach}}' data-role="table" data-ipsKeyNav data-ipsKeyNav-observe='e d return'>
+				<tbody data-role="tableRows">
+					{template="$table->rowsTemplate[1]" params="$table, $headers, $rows" object="$table->rowsTemplate[0]"}
+				</tbody>
+			</table>
+		</div>
+	{{else}}
+		<div class='ipsType_center ipsPad'>
+			<p class='ipsType_large ipsType_light'>{lang="no_rows_in_table"}</p>
+			{{if method_exists( $table, 'container' ) AND $table->container() !== NULL}}
+				{{if $table->container()->can('add')}}
+					<a href='{$table->container()->url()->setQueryString( 'do', 'add' )}' class='ipsButton ipsButton_primary ipsButton_medium'>
+						{lang="submit_first_row"}
+					</a>
+				{{endif}}
+			{{endif}}
+		</div>
+	{{endif}}
+				
+	{{if $table->pages > 1}}
+		<div class="ipsButtonBar ipsPad_half ipsClearfix ipsClear">
+			<div data-role="tablePagination">
+				{template="pagination" group="global" app="core" location="global" params="$table->baseUrl, $table->pages, $table->page, $table->limit, TRUE, $table->getPaginationKey()"}
+			</div>
+		</div>
+	{{endif}}
+</div>]]></template>
+ <template template_group="topic" template_name="tpp_noAccess" template_data="" template_location="front" template_app="tpp"><![CDATA[<div class='ipsMessage ipsMessage_error'>
+	{lang="tpp_enter_topic_password_desc"}
+</div>]]></template>
+ <template template_group="topic" template_name="tpp_password" template_data="$form" template_location="front" template_app="tpp"><![CDATA[<div class='ipsBox ipsBox--child ipsPad_double ipsType_center'>
+	<h1 class="ipsType_pageTitle">
+		{lang="tpp_enter_topic_password"}
+	</h1>
+	<br>
+	{lang="tpp_enter_topic_password_desc"}
+	<br><br>
+	{$form|raw}
+</div>]]></template>
+ <template template_group="topic" template_name="tpp_passwordBadgeForum" template_data="$topic" template_location="front" template_app="tpp"><![CDATA[{{if $topic->checkPasswordSettings()}}
+	<span>
+		<span class="ipsBadge ipsBadge_icon ipsBadge_small ipsBadge_negative" data-ipsTooltip title='{lang="tpp_app_password_protected"}'>
+			<i class='fa fa-key'></i>
+		</span>
+	</span>
+{{endif}}]]></template>
+ <template template_group="topic" template_name="tpp_passwordBadgeTopic" template_data="$topic" template_location="front" template_app="tpp"><![CDATA[{{if $topic->checkPasswordSettings()}}
+	<span>
+		<span class="ipsBadge ipsBadge_icon ipsBadge_negative" data-ipsTooltip title='{lang="tpp_app_password_protected"}'>
+			<i class='fa fa-key'></i>
+		</span>
+	</span>
+{{endif}}]]></template>
+ <template template_group="topic" template_name="tpp_passwordGeneral" template_data="$table" template_location="front" template_app="tpp">{$table|raw}</template>
+ <template template_group="topic" template_name="tpp_passwordMenu" template_data="$topic" template_location="front" template_app="tpp"><![CDATA[{{if $topic->canManagePasswords()}}
+    <li>
+        <a href="#elTopicPassword_menu" id="elTopicPassword" class="ipsButton ipsButton_link ipsButton_narrow ipsButton_fullWidth" data-ipsmenu="">
+            {lang="password"}
+            <i class="fa fa-caret-down"> </i>
+        </a>
+		<ul id="elTopicPassword_menu" class="ipsMenu ipsMenu_auto ipsHide">
+			{{if $topic->canManagePasswords()}}
+				{{if $topic->getPasswordMetaDataId()}}
+					<li class="ipsMenu_item">
+						<a href="{$topic->url()->setQueryString( 'do', 'editPassword' )}" title="" data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-modal='true' data-ipsDialog-title='{lang="tpp_edit_password"}'>
+							{lang="tpp_edit_password"}
+						</a>
+					</li>
+					<li class="ipsMenu_item">
+						<a href="{$topic->url()->setQueryString( 'do', 'delPassword' )}" data-confirm>
+							{lang="tpp_del_password"}
+						</a>
+					</li>
+				{{else}}
+					<li class="ipsMenu_item">
+						<a href="{$topic->url()->setQueryString( 'do', 'addPassword' )}" title="" data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-modal='true' data-ipsDialog-title='{lang="tpp_public_title"}'>
+							{lang="tpp_add_password"}
+						</a>
+					</li>
+				{{endif}}
+				<li class='ipsMenu_sep'><hr></li>
+			{{endif}}
+			{{if $topic->canManagePasswords() AND \IPS\Member::loggedIn()->modPermission('tpp_view_logs')}}
+				<li class="ipsMenu_item">
+					<a href="{$topic->url()->setQueryString( 'do', 'passwordLogs' )}" title="" data-ipsDialog data-ipsDialog-modal='true' data-ipsDialog-title='{lang="tpp_logs_password"}'>
+						{lang="tpp_logs_password"}
+					</a>
+				</li>
+			{{endif}}
+		</ul>
+	</li>
+{{endif}}]]></template>
+ <template template_group="topic" template_name="tpp_passwordRows" template_data="$table, $headers, $rows" template_location="front" template_app="tpp"><![CDATA[{{if \count( $rows )}}
+	{{foreach $rows as $row}}
+		{{$user = \IPS\Member::load( $row['member_id'] );}}
+		<tr class='ipsClearfix'>
+			<td style='width: 5%;' class='cNexusSupportTable_icon'>
+				{template="userPhoto" app="core" group="global" params="$user, 'tiny'"}
+			</td>
+			<td style='width: 20%;' class='ipsPos_top'>
+				<div class='ipsType_medium'>
+					{$user->name}
+					<p class='ipsType_reset ipsType_small'>{expression="\IPS\Member\Group::load( $row['member_group_id'] )->formattedName" raw="true"}</p>
+				</div>
+			</td>
+			<td class='ipsType_center' style='width: 40%;'>
+				{datetime="$row['date']" norelative="true"}
+			</td>
+			<td style='width: 35%;'>
+				{$row['action']}
+			</td>
+		</tr>
+	{{endforeach}}
+{{endif}}]]></template>
+ <template template_group="topic" template_name="tpp_passwordTable" template_data="$table, $headers, $rows, $quickSearch" template_location="front" template_app="tpp"><![CDATA[<div data-baseurl='{$table->baseUrl}' data-resort='{$table->resortKey}' data-controller='core.global.core.table' {{if $table->getPaginationKey() != 'page'}}data-pageParam='{$table->getPaginationKey()}'{{endif}}>
+
+	{{if $table->pages > 1}}
+		<div class="ipsButtonBar ipsPad_half ipsClearfix ipsClear">
+			<div data-role="tablePagination">
+				{template="pagination" group="global" app="core" location="global" params="$table->baseUrl, $table->pages, $table->page, $table->limit, TRUE, $table->getPaginationKey()"}
+			</div>
+		</div>
+	{{endif}}
+
+	{{if \count( $rows )}}
+		<div class="ipsPad">
+			<table class='ipsTable ipsTable_responsive ipsTable_zebra {{foreach $table->classes as $class}}{$class} {{endforeach}}' data-role="table" data-ipsKeyNav data-ipsKeyNav-observe='e d return'>
+				<tbody data-role="tableRows">
+					{template="$table->rowsTemplate[1]" params="$table, $headers, $rows" object="$table->rowsTemplate[0]"}
+				</tbody>
+			</table>
+		</div>
+	{{else}}
+		<div class='ipsType_center ipsPad'>
+			<p class='ipsType_large ipsType_light'>{lang="no_rows_in_table"}</p>
+			{{if method_exists( $table, 'container' ) AND $table->container() !== NULL}}
+				{{if $table->container()->can('add')}}
+					<a href='{$table->container()->url()->setQueryString( 'do', 'add' )}' class='ipsButton ipsButton_primary ipsButton_medium'>
+						{lang="submit_first_row"}
+					</a>
+				{{endif}}
+			{{endif}}
+		</div>
+	{{endif}}
+				
+	{{if $table->pages > 1}}
+		<div class="ipsButtonBar ipsPad_half ipsClearfix ipsClear">
+			<div data-role="tablePagination">
+				{template="pagination" group="global" app="core" location="global" params="$table->baseUrl, $table->pages, $table->page, $table->limit, TRUE, $table->getPaginationKey()"}
+			</div>
+		</div>
+	{{endif}}
+</div>]]></template>
+</theme>

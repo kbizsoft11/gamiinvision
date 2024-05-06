@@ -1,0 +1,22 @@
+{
+    "topicTemplate": {
+        "type": "S",
+        "class": "\\IPS\\Theme\\class_forums_front_topics"
+    },
+    "topicController": {
+        "type": "C",
+        "class": "\\IPS\\forums\\modules\\front\\forums\\topic"
+    },
+    "topicModel": {
+        "type": "C",
+        "class": "\\IPS\\forums\\Topic"
+    },
+    "postModel": {
+        "type": "C",
+        "class": "\\IPS\\forums\\Topic\\Post"
+    },
+    "topicRowTemplate": {
+        "type": "S",
+        "class": "\\IPS\\Theme\\class_forums_front_forums"
+    }
+}

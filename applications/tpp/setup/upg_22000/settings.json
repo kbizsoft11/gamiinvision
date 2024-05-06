@@ -1,0 +1,15 @@
+{
+    "added": [
+        "tpp_app_cookie_days",
+        "tpp_app_forcelogin",
+        "tpp_app_forums",
+        "tpp_app_groups",
+        "tpp_app_groups_exempt",
+        "tpp_app_log",
+        "tpp_app_log_days_remove",
+        "tpp_app_max_password",
+        "tpp_app_min_password"
+    ],
+    "edited": [],
+    "removed": []
+}

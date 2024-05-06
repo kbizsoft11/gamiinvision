@@ -1,0 +1,50 @@
+{
+    "normal": {
+        "added": [
+            "__app_tpp",
+            "menu__tpp_tpp",
+            "menu__tpp_tpp_logs",
+            "menu__tpp_tpp_settings",
+            "tpp_public_title",
+            "tpp_add_password",
+            "tpp_edit_password",
+            "tpp_del_password",
+            "tpp_logs_password",
+            "tpp_pw_added",
+            "tpp_app_log_password_added",
+            "tpp_app_log_password_edited",
+            "tpp_app_log_password_deleted",
+            "modperms__tpp_topicPassword",
+            "tpp_view_logs",
+            "tpp_app_groups",
+            "tpp_app_groups_exempt",
+            "tpp_app_groups_exempt_desc",
+            "tpp_app_forums",
+            "tpp_app_all_forums",
+            "tpp_app_log",
+            "tpp_app_log_desc",
+            "tpp_app_forcelogin",
+            "tpp_app_cookie_days",
+            "tpp_app_tab_basic",
+            "tpp_app_tab_advanced",
+            "tpp_app_min_password",
+            "tpp_app_max_password",
+            "acplogs__tpp_settings",
+            "tpp_enter_topic_password",
+            "tpp_enter_topic_password_desc",
+            "tpp_password_error",
+            "tpp_app_password_added",
+            "tpp_app_password_edited",
+            "tpp_app_password_removed",
+            "tpp_app_password_protected",
+            "tpp_rebuilding_topics_password"
+        ],
+        "edited": [],
+        "removed": []
+    },
+    "js": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

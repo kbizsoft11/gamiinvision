@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+ <module key="front/chatbox"><![CDATA[{"default_controller":"chatbox","protected":0}]]></module>
+ <module key="admin/chatbox"><![CDATA[{"default_controller":"settings","protected":0}]]></module>
+ <setting key="chatbox_conf_announcements"><![CDATA[{"key":"chatbox_conf_announcements","default":""}]]></setting>
+ <setting key="chatbox_conf_anntab"><![CDATA[{"key":"chatbox_conf_anntab","default":"0"}]]></setting>
+ <setting key="chatbox_conf_autoClear"><![CDATA[{"key":"chatbox_conf_autoClear","default":"1"}]]></setting>
+ <setting key="chatbox_conf_blocklist"><![CDATA[{"key":"chatbox_conf_blocklist","default":""}]]></setting>
+ <setting key="chatbox_conf_canDelete"><![CDATA[{"key":"chatbox_conf_canDelete","default":""}]]></setting>
+ <setting key="chatbox_conf_canEdit"><![CDATA[{"key":"chatbox_conf_canEdit","default":""}]]></setting>
+ <setting key="chatbox_conf_canView"><![CDATA[{"key":"chatbox_conf_canView","default":""}]]></setting>
+ <setting key="chatbox_conf_canchat"><![CDATA[{"key":"chatbox_conf_canchat","default":""}]]></setting>
+ <setting key="chatbox_conf_chatlimit"><![CDATA[{"key":"chatbox_conf_chatlimit","default":"100"}]]></setting>
+ <setting key="chatbox_conf_editOwn"><![CDATA[{"key":"chatbox_conf_editOwn","default":""}]]></setting>
+ <setting key="chatbox_conf_floodlimit"><![CDATA[{"key":"chatbox_conf_floodlimit","default":"10"}]]></setting>
+ <setting key="chatbox_conf_giphy"><![CDATA[{"key":"chatbox_conf_giphy","default":"0"}]]></setting>
+ <setting key="chatbox_conf_guggy"><![CDATA[{"key":"chatbox_conf_guggy","default":"no"}]]></setting>
+ <setting key="chatbox_conf_height"><![CDATA[{"key":"chatbox_conf_height","default":"360"}]]></setting>
+ <setting key="chatbox_conf_hidePhoto"><![CDATA[{"key":"chatbox_conf_hidePhoto","default":"0"}]]></setting>
+ <setting key="chatbox_conf_hide_enter_mobile"><![CDATA[{"key":"chatbox_conf_hide_enter_mobile","default":"0"}]]></setting>
+ <setting key="chatbox_conf_imgPost"><![CDATA[{"key":"chatbox_conf_imgPost","default":"1"}]]></setting>
+ <setting key="chatbox_conf_interval"><![CDATA[{"key":"chatbox_conf_interval","default":"10000"}]]></setting>
+ <setting key="chatbox_conf_maxemoticons"><![CDATA[{"key":"chatbox_conf_maxemoticons","default":"5"}]]></setting>
+ <setting key="chatbox_conf_maxlength"><![CDATA[{"key":"chatbox_conf_maxlength","default":"500"}]]></setting>
+ <setting key="chatbox_conf_moderators"><![CDATA[{"key":"chatbox_conf_moderators","default":""}]]></setting>
+ <setting key="chatbox_conf_on"><![CDATA[{"key":"chatbox_conf_on","default":"1"}]]></setting>
+ <setting key="chatbox_conf_ordertop"><![CDATA[{"key":"chatbox_conf_ordertop","default":"0"}]]></setting>
+ <setting key="chatbox_conf_timeformat"><![CDATA[{"key":"chatbox_conf_timeformat","default":"12"}]]></setting>
+ <setting key="chatbox_conf_videoPost"><![CDATA[{"key":"chatbox_conf_videoPost","default":"0"}]]></setting>
+ <widget key="bimchatbox"><![CDATA[{"class":"\\IPS\\Widget","restrict":["sidebar","cms"],"default_area":"","allow_reuse":false,"menu_style":"menu","embeddable":false}]]></widget>
+ <hook key="includeJSandCSS"><![CDATA[{"type":"C","class":"\\IPS\\Dispatcher\\Front"}]]></hook>
+</build>

@@ -1,0 +1,43 @@
+{
+    "profilebackgrounds_data": {
+        "name": "profilebackgrounds_data",
+        "columns": {
+            "pb_member_id": {
+                "name": "pb_member_id",
+                "type": "BIGINT",
+                "length": "20",
+                "decimals": null,
+                "values": null,
+                "allow_null": false,
+                "default": 0,
+                "comment": "ID Number",
+                "unsigned": true,
+                "auto_increment": true
+            },
+            "pb_location": {
+                "name": "pb_location",
+                "type": "TEXT",
+                "length": null,
+                "decimals": null,
+                "values": null,
+                "allow_null": true,
+                "default": null,
+                "comment": "",
+                "unsigned": false,
+                "auto_increment": false
+            }
+        },
+        "indexes": {
+            "PRIMARY": {
+                "type": "primary",
+                "name": "PRIMARY",
+                "columns": [
+                    "pb_member_id"
+                ],
+                "length": [
+                    null
+                ]
+            }
+        }
+    }
+}

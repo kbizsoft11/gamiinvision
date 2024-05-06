@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+ <app key="bimchatbox" version="430002">
+  <word key="__app_bimchatbox" js="0">Chatbox FREE</word>
+  <word key="chatbox_enter" js="0">Enter</word>
+  <word key="chatbox_delete" js="0">Delete</word>
+  <word key="chatbox_delete_confirm" js="0">Are you sure you want to delete?</word>
+  <word key="module__bimchatbox_chatbox" js="0">Chatbox</word>
+  <word key="chatbox_title" js="0">Chatbox</word>
+  <word key="frontnavigation_bimchatbox" js="0">Chatbox</word>
+  <word key="menutab__bimchatbox" js="0">Chatbox</word>
+  <word key="menutab__bimchatbox_icon" js="0">weixin</word>
+  <word key="menu__bimchatbox_chatbox" js="0">Chatbox</word>
+  <word key="menu__bimchatbox_chatbox_settings" js="0">Settings</word>
+  <word key="acplogs__chatbox_settings" js="0">Updated Chatbox settings</word>
+  <word key="chatbox_conf_on" js="0">Enable Chatbox</word>
+  <word key="chatbox_conf_floodlimit" js="0">Flood control</word>
+  <word key="chatbox_conf_floodlimit_desc" js="0">Prevent sending messages within this timeframe (in seconds). Moderators can bypass the flood control.</word>
+  <word key="chatbox_conf_maxlength" js="0">Max chat length</word>
+  <word key="chatbox_conf_maxlength_desc" js="0">The maximum characters of a message.</word>
+  <word key="chatbox_conf_chatlimit" js="0">Messages to display</word>
+  <word key="chatbox_conf_chatlimit_desc" js="0">Enter the number of messages to display</word>
+  <word key="chatbox_conf_canchat" js="0">Who can chat?</word>
+  <word key="chatbox_conf_moderators" js="0">Who can manage the Chatbox?</word>
+  <word key="chatbox_conf_moderators_desc" js="0">Can set announcement, block users, delete, edit messages, clear all messages.</word>
+  <word key="chatbox_conf_canEdit" js="0">Who can edit all messages?</word>
+  <word key="chatbox_conf_canDelete" js="0">Who can delete all messages?</word>
+  <word key="chatbox_error_off" js="0">Chatbox is offline</word>
+  <word key="chatbox_error_nomsg" js="0">What're you chatting?</word>
+  <word key="chatbox_error_cannotchat" js="0">You don't have permission to chat</word>
+  <word key="chatbox_error_notmoderator" js="0">You don't have permission to do this action</word>
+  <word key="chatbox_error_flood" js="0">You're chatting too fast, please wait %s seconds to continue.</word>
+  <word key="chatbox_error_toomanyemo" js="0">You may only use {{num}} emoticons in a message</word>
+  <word key="chatbox_error_inblock" js="0">You can not chat because you're in block list.</word>
+  <word key="chatbox_conf_maxemoticons" js="0">Max emoticons</word>
+  <word key="chatbox_management" js="0">Chatbox Management</word>
+  <word key="block_bimchatbox" js="0">Chatbox</word>
+  <word key="block_bimchatbox_desc" js="0"></word>
+  <word key="chatbox_blocklist" js="0">Block List</word>
+  <word key="chatbox_conf_blocklist" js="0">Block members</word>
+  <word key="chatbox_conf_blocklist_desc" js="0">Enter member's name, separated by commas</word>
+  <word key="chatbox_manage" js="0">Manage</word>
+  <word key="chatbox_clearchat" js="0">Clear all chatting</word>
+  <word key="chatbox_clearchat_desc" js="0">Can not be restored.</word>
+  <word key="chatbox_conf_announcements" js="0">Rules</word>
+  <word key="chatbox_conf_announcements_desc" js="0">Support HTML</word>
+  <word key="chatbox_error_noper" js="0">You don't have permission to chat.</word>
+  <word key="chatbox_placeholder" js="0">Your message here...</word>
+  <word key="chatbox_group_cansee" js="0">Who can see</word>
+  <word key="chatbox_emoticons" js="0">Emoticons</word>
+  <word key="chatbox_send" js="0">Send</word>
+  <word key="chatbox_togglesound" js="0">Toggle sound notifications</word>
+  <word key="chatbox_toggleChat" js="0">Toggle Chatbox</word>
+  <word key="seconds" js="0">seconds</word>
+  <word key="chatbox_conf_height" js="0">Default min-height</word>
+  <word key="chatbox_conf_anntab" js="0">Show link to rules</word>
+  <word key="chatbox_conf_anntab_desc" js="0">The rules will be shown on a separate page with a link added in the top of chatbox</word>
+  <word key="chatbox_emocategories" js="0">Categories</word>
+  <word key="chatbox_conf_interval" js="0">Interval update</word>
+  <word key="chatbox_conf_interval_desc" js="0"><![CDATA[in miliseconds.<br>Eg: 10000 = 10 seconds]]></word>
+  <word key="chatbox_error_maxlength" js="0">The message is too long.</word>
+  <word key="chatbox_conf_ordertop" js="0">Newer messages in top?</word>
+  <word key="chatbox_conf_hidePhoto" js="0">Hide avatar?</word>
+  <word key="chatbox_error_nodata" js="0">No data</word>
+  <word key="chatbox_edit" js="0">Edit message</word>
+  <word key="chatbox_tab_basic" js="0">General</word>
+  <word key="chatbox_tab_advanced" js="0">Advanced</word>
+  <word key="chatbox_conf_timeformat" js="0">Time Format</word>
+  <word key="chatbox_12hour" js="0">Show times with AM/PM</word>
+  <word key="chatbox_24hour" js="0">Show time with 24 hour format</word>
+  <word key="chatbox_time_am" js="0">AM</word>
+  <word key="chatbox_time_pm" js="0">PM</word>
+  <word key="chatbox_mention" js="0">Click to mention</word>
+  <word key="chatbox_conf_autoClear" js="0">Auto delete old messages</word>
+  <word key="chatbox_conf_autoClear_desc" js="0">The old messages will be auto deleted from database when updating messages.</word>
+  <word key="chatbox_conf_canView" js="0">Who can View?</word>
+  <word key="chatbox_error_noajax" js="0">Your browser doesn't support javascript</word>
+  <word key="chatbox_conf_imgPost" js="0">Allow images?</word>
+  <word key="chatbox_conf_videoPost" js="0">Allow Youtube?</word>
+  <word key="chatbox_conf_editOwn" js="0">Who can edit their own msg?</word>
+  <word key="chatbox_tab_perm" js="0">Permissions</word>
+  <word key="ignore_chatbox" js="0">Chatbox</word>
+  <word key="cb_loadmore" js="0">Load More</word>
+  <word key="confirmDelete" js="0">Are you sure you want to delete this message?</word>
+  <word key="chatbox_month_0" js="0">Jan</word>
+  <word key="chatbox_month_1" js="0">Feb</word>
+  <word key="chatbox_month_2" js="0">Mar</word>
+  <word key="chatbox_month_3" js="0">Apr</word>
+  <word key="chatbox_month_4" js="0">May</word>
+  <word key="chatbox_month_5" js="0">June</word>
+  <word key="chatbox_month_6" js="0">July</word>
+  <word key="chatbox_month_7" js="0">Aug</word>
+  <word key="chatbox_month_8" js="0">Sept</word>
+  <word key="chatbox_month_9" js="0">Oct</word>
+  <word key="chatbox_month_10" js="0">Nov</word>
+  <word key="chatbox_month_11" js="0">Dec</word>
+  <word key="chatbox_today" js="0">Today</word>
+  <word key="chatbox_disconnect" js="0">Chatbox has been disconnected.</word>
+  <word key="chatbox_reconnect" js="0">Click to reconnect</word>
+  <word key="chatbox_connecting" js="0">Connecting...</word>
+  <word key="chatbox_save" js="0">Save</word>
+  <word key="chatbox_cancel" js="0">Cancel</word>
+  <word key="chatbox_error_noolder" js="0">No older messages to display.</word>
+  <word key="menu__bimchatbox_chatbox_moderators" js="0">Moderator Logs</word>
+  <word key="chatbox_log_delete" js="0">Deleted a message: </word>
+  <word key="chatbox_log_edit" js="0">Edited a message: </word>
+  <word key="chatbox_log_pure" js="0">Cleared all messages.</word>
+  <word key="chatbox_log_clear" js="0">Cleared all messages.</word>
+  <word key="chatbox_log_ann" js="0">Updated announcement: </word>
+  <word key="chatbox_log_ban" js="0">Changed 'block members' setting: </word>
+  <word key="chatbox_log_unban" js="0">Unbanned all users.</word>
+  <word key="chatbox_clearlogs" js="0">Clear all logs</word>
+  <word key="chatbox_clearlogs_confirm" js="0">Are you sure you want to clear all logs?</word>
+  <word key="chatbox_saved" js="0">Saved</word>
+  <word key="chatbox_deleted" js="0">Deleted</word>
+  <word key="chatbox_rules_link" js="0">Click here to read the rules of Chatbox</word>
+  <word key="chatbox_rules_title" js="0">Chatbox rules</word>
+  <word key="chatbox_playvideo" js="0">Playing video</word>
+  <word key="chatbox_conf_giphy" js="0">GIPHY</word>
+  <word key="bim_giphy" js="0">GIPHY</word>
+  <word key="chatbox_rules" js="0">Rules</word>
+  <word key="chatbox_conf_hide_enter_mobile" js="0">Hide Enter button in mobile</word>
+  <word key="chatbox_conf_giphy_desc" js="0"><![CDATA[You can easy to find the world's largest library of animated images. Make sure you have installed <a href='https://invisioncommunity.com/files/file/8861-bim42-giphy/' target=_blank><b>GIPHY plugin</b></a>.]]></word>
+  <word key="cb_giphy_no" js="0">Disabled</word>
+  <word key="cb_giphy_button" js="0">Button</word>
+  <word key="cb_giphy_cmd" js="0">Command /giphy</word>
+  <word key="cb_giphy_cmd_desc" js="0">Eg: /giphy doraemon</word>
+  <word key="cb_giphy_both" js="0">Button and command</word>
+  <word key="cb_giphy_both_desc" js="0">User can use button and the command /giphy to find gif images</word>
+  <word key="chatbox_header_chat" js="0">Chatting</word>
+  <word key="chatbox_header_media" js="0">Media</word>
+  <word key="chatbox_error_nogiphy" js="0"><![CDATA[Make sure you have installed <a href='https://invisioncommunity.com/files/file/8861-bim42-giphy/' target=_blank><b>GIPHY plugin</b></a>]]></word>
+  <word key="chatbox_settings_header" js="0">Settings</word>
+  <word key="bimchatbox_error_badchars" js="0">Too many special characters!</word>
+  <word key="confirmDelete" js="1">Are you sure you want to delete this message?</word>
+  <word key="chatbox_error_toomanyemo" js="1">You may only use {{num}} emoticons in a message</word>
+  <word key="chatbox_time_am" js="1">AM</word>
+  <word key="chatbox_time_pm" js="1">PM</word>
+  <word key="chatbox_month_0" js="1">Jan</word>
+  <word key="chatbox_month_1" js="1">Feb</word>
+  <word key="chatbox_month_2" js="1">Mar</word>
+  <word key="chatbox_month_3" js="1">Apr</word>
+  <word key="chatbox_month_4" js="1">May</word>
+  <word key="chatbox_month_5" js="1">June</word>
+  <word key="chatbox_month_6" js="1">July</word>
+  <word key="chatbox_month_7" js="1">Aug</word>
+  <word key="chatbox_month_8" js="1">Sept</word>
+  <word key="chatbox_month_9" js="1">Oct</word>
+  <word key="chatbox_month_10" js="1">Nov</word>
+  <word key="chatbox_month_11" js="1">Dec</word>
+  <word key="chatbox_today" js="1">Today</word>
+  <word key="chatbox_disconnect" js="1">Chatbox has been disconnected.</word>
+  <word key="chatbox_reconnect" js="1">Click to reconnect</word>
+  <word key="chatbox_connecting" js="1">Connecting...</word>
+  <word key="chatbox_save" js="1">Save</word>
+  <word key="chatbox_cancel" js="1">Cancel</word>
+  <word key="chatbox_error_noolder" js="1">No older messages to display.</word>
+  <word key="cb_expandPlayer" js="1">Play video in popup</word>
+ </app>
+</language>

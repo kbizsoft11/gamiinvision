@@ -1,0 +1,34 @@
+{
+    "html": {
+        "added": [],
+        "edited": [
+            "front\/chat\/chatform",
+            "admin\/chat\/dashboardHeader",
+            "front\/chat\/edit",
+            "front\/chat\/emoticons",
+            "front\/chat\/main",
+            "front\/chat\/manage",
+            "front\/chat\/rules",
+            "front\/embed\/chatvars",
+            "front\/chat\/chatform",
+            "front\/chat\/main",
+            "front\/embed\/chatvars",
+            "front\/chat\/chatform",
+            "front\/chat\/main",
+            "front\/embed\/chatvars"
+        ],
+        "removed": []
+    },
+    "css": {
+        "added": [],
+        "edited": [
+            "front\/chatbox.css"
+        ],
+        "removed": []
+    },
+    "resources": {
+        "added": [],
+        "edited": [],
+        "removed": []
+    }
+}

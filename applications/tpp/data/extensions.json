@@ -1,0 +1,19 @@
+{
+    "core": {
+        "MemberSync": {
+            "topicPassword": "IPS\\tpp\\extensions\\core\\MemberSync\\topicPassword"
+        },
+        "MetaData": {
+            "tpp": "IPS\\tpp\\extensions\\core\\MetaData\\tpp"
+        },
+        "ModeratorPermissions": {
+            "topicPassword": "IPS\\tpp\\extensions\\core\\ModeratorPermissions\\topicPassword"
+        },
+        "Queue": {
+            "topicPasswordsFromPlugin": "IPS\\tpp\\extensions\\core\\Queue\\topicPasswordsFromPlugin"
+        },
+        "Uninstall": {
+            "topicPassword": "IPS\\tpp\\extensions\\core\\Uninstall\\topicPassword"
+        }
+    }
+}

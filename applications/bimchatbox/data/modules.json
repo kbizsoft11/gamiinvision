@@ -1,0 +1,14 @@
+{
+    "front": {
+        "chatbox": {
+            "default_controller": "chatbox",
+            "protected": 0
+        }
+    },
+    "admin": {
+        "chatbox": {
+            "default_controller": "settings",
+            "protected": 0
+        }
+    }
+}

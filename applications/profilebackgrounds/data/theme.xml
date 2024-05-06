@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="Default" author_name="Invision Power Services, Inc" author_url="https://www.invisioncommunity.com">
+ <template template_group="profile" template_name="profileHeaderButton" template_data="$member" template_location="front" template_app="profilebackgrounds"><![CDATA[{{if \IPS\Settings::i()->profilebackground_Groups == '*' OR \IPS\Member::loggedIn()->inGroup(explode( ',', \IPS\Settings::i()->profilebackground_Groups ) )}}
+	<li>
+		<a href='{$member->url()->setQueryString( "do", "profileBackgroundImage" )}' base="front" class="ipsButton ipsButton_small ipsButton_overlaid" data-ipsdialog="" data-ipsdialog-modal="true" data-ipsdialog-title="{lang="profilebackgrounds_title"}">
+			<i class="fa fa-picture-o"> </i>
+			<span class="ipsResponsive_hidePhone ipsResponsive_inline">
+				{lang="profilebackgrounds_title"}
+			</span>
+		</a>
+	</li>
+{{endif}}]]></template>
+ <template template_group="profile" template_name="profileHeaderCss" template_data="$member" template_location="front" template_app="profilebackgrounds"><![CDATA[{{if $member->profileBackgroundImage()}}
+	<style>
+		body
+		{
+			background-image: url( '{file="$member->profileBackgroundImage()" extension="profilebackgrounds_profileBackground"}') !important;
+			background-size: cover !important;
+			background-repeat: no-repeat !important;
+			background-attachment: fixed !important;
+			background-position: 50% 0% !important;
+		}
+	</style>
+{{endif}}]]></template>
+</theme>

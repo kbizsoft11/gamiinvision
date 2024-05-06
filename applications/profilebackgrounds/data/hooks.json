@@ -1,0 +1,14 @@
+{
+    "memberModel": {
+        "type": "C",
+        "class": "\\IPS\\Member"
+    },
+    "profileTemplate": {
+        "type": "S",
+        "class": "\\IPS\\Theme\\class_core_front_profile"
+    },
+    "profileController": {
+        "type": "C",
+        "class": "\\IPS\\core\\modules\\front\\members\\profile"
+    }
+}

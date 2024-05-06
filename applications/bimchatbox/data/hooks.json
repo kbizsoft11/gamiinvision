@@ -1,0 +1,6 @@
+{
+    "includeJSandCSS": {
+        "type": "C",
+        "class": "\\IPS\\Dispatcher\\Front"
+    }
+}
