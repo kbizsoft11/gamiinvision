@@ -8,7 +8,7 @@
  * @since		18 Feb 2013
  */
 
-namespace IPS;  
+namespace IPS;
 
 /**
  * Class to contain Invision Community autoloader and exception handler
